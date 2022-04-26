@@ -1,7 +1,7 @@
 Hi 👋 My name is Pedro Lucas
 ============================
 
-Web Developer
+I'm Web Developer
 -------------
 
 I'm 19 and I've be leaning code since 14, but stoped for a while and now I'm back trying to build my career in Web Development.

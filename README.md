@@ -43,6 +43,7 @@ I'm 19 and I've be leaning code since 14, but stoped for a while and now I'm bac
 ### Badges
 
 <b>My GitHub Stats</b>
+
 <a href="http://www.github.com/pedrolucaslcosta">
     <img src="https://github-readme-stats.vercel.app/api?username=pedrolucaslcosta&show_icons=true&hide=&count_private=true&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&show_icons=true" alt="pedrolucaslcosta's GitHub stats" />
 </a>

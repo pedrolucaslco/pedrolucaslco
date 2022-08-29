@@ -4,7 +4,7 @@ Hi 👋
 I'm Web Developer
 -------------
 
-I'm 19 and I've be leaning code since 14, but stoped for a while and now I'm back trying to build my career in Front-end Development.
+I'm 19 and I've be learning code since 14, but stoped for a while and now I'm back trying to build my career in Front-end Development.
 
 *   🌍  I'm based in Brazil
 *   🖥️  See my portfolio [Here](http://github.com/pedrolucaslcosta?tab=repositories)

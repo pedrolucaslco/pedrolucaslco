@@ -1,17 +1,17 @@
 Hi 👋
 ============================
 
-I'm Web Developer
+I'm Pedro
 -------------
 
-I'm 19 and I've be learning code since 14, but stoped for a while and now I'm back trying to build my career in Front-end Development.
+I'm 20 and I've be learning code since 14, but stoped for a while and now I'm back trying to build my career in Front-end Development.
 
 *   🌍  I'm based in Brazil
 *   🖥️  See my portfolio [Here](http://github.com/pedrolucaslcosta?tab=repositories)
 *   ✉️  You can contact me at [pedrolucaslcosta@gmail.com](mailto:pedrolucaslcosta@gmail.com)
-*   🚀  I'm currently working on [Simple BMI Calculator](http://github.com/pedrolucaslcosta/BMI-calculator)
+*   🚀  I'm currently working on [to-do-list-react-js](https://github.com/pedrolucaslcosta/to-do-list-react-js)
 *   🧠  I'm learning Javascript and React.js
-*   🤝  I'm open to collaborating on Simple JS/React projects
+
 * <a href="https://www.twitter.com/pedrolucaslco" target="_blank" rel="noreferrer"><img
                   src="https://img.shields.io/twitter/follow/pedrolucaslco?logo=twitter&style=for-the-badge&color=0891b2&labelColor=1c1917"
                 /></a><a href="https://www.github.com/pedrolucaslcosta" target="_blank" rel="noreferrer"><img src="https://img.shields.io/github/followers/pedrolucaslcosta?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917" /></a>

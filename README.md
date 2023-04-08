@@ -4,27 +4,12 @@
 
 <p>Sou um Desenvolverdor Frontend Junior e UI/UX Designer, aos poucos migrando da área do Design Gráfico para o Desenvolvimento Web. Técnico em Informática para Internet pelo Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN) e cursando Design Gráfico na Universidade Potiguar (UnP).</p>
 
-</br>
-
 <p>Atualmente trabalhando com Laravel e estudando React.js.</p>
 
-<h3>Caso queira acompanhar meus conteúdos:</h3> 
-
-<div align="left">
-  <a href="https://www.instagram.com/pedrolucaslco/" target="_blank" alt="Instagram">
-    <img src="https://img.shields.io/badge/-Instagram-075985?style=for-the-badge&logo=Instagram&logoColor=FFF"/>
-  </a>
-  
-  <a href="https://www.linkedin.com/in/pedrolucaslcosta" alt="Linkedin">
-    <img src="https://img.shields.io/badge/-Linkedin-075985?style=for-the-badge&logo=Linkedin&logoColor=FFF"/>
-  </a>
-  
-  <a href="http://www.twitter.com/pedrolucaslco" alt="Twitter">
-    <img src="https://img.shields.io/badge/-Discord-075985?style=for-the-badge&logo=Discord&logoColor=FFF"/>
-  </a>
-</div>
+</br>
 
 <h3>Stack:</h3> 
+
 <p align="left">
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="32" height="32" alt="JavaScript" /></a>
 <a href="https://www.php.net/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/php-colored.svg" width="32" height="32" alt="PHP" /></a>
@@ -38,3 +23,19 @@
 <a href="adobe.com/uk/products/illustrator.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/illustrator-colored.svg" width="32" height="32" alt="Illustrator" /></a>
 <a href="https://www.figma.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="32" height="32" alt="Figma" /></a>
 </p>
+
+<h3>Caso queira acompanhar meus conteúdos:</h3> 
+
+<div align="left">
+  <a href="https://www.instagram.com/pedrolucaslco/" target="_blank" alt="Instagram">
+    <img src="https://img.shields.io/badge/-Instagram-075985?style=for-the-badge&logo=Instagram&logoColor=FFF"/>
+  </a>
+  
+  <a href="https://www.linkedin.com/in/pedrolucaslcosta" alt="Linkedin">
+    <img src="https://img.shields.io/badge/-Linkedin-075985?style=for-the-badge&logo=Linkedin&logoColor=FFF"/>
+  </a>
+  
+  <a href="http://www.twitter.com/pedrolucaslco" alt="Twitter">
+    <img src="https://img.shields.io/badge/-Twitter-075985?style=for-the-badge&logo=Twitter&logoColor=FFF"/>
+  </a>
+</div>

@@ -19,8 +19,8 @@
     <img src="https://img.shields.io/badge/-Linkedin-ff3a5e?style=for-the-badge&logo=Linkedin&logoColor=FFF"/>
   </a>
   
-  <a href="http://www.twitter.com/pedrolucaslco" alt="Discord">
-<!--     <img src="https://img.shields.io/badge/-Discord-ff3a5e?style=for-the-badge&logo=Discord&logoColor=FFF"/> -->
+  <a href="http://www.twitter.com/pedrolucaslco" alt="Twitter">
+    <img src="https://img.shields.io/badge/-Discord-ff3a5e?style=for-the-badge&logo=Discord&logoColor=FFF"/>
   </a>
 </div>
 

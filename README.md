@@ -4,7 +4,7 @@
 
 <p>I'm a Junior Frontend Developer and UI/UX Designer. Technician in Internet Computing at the Federal Institute of Rio Grande do Norte (IFRN) and studying Graphic Design at the Potiguar University (UnP). Currently working with Laravel and studying React.js.</p>
 
-<p align="left">
+<!-- <p align="left">
 <a href="https://laravel.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/laravel-colored.svg" width="24" height="24" alt="Laravel" /></a>
 <a href="https://www.php.net/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/php-colored.svg" width="24" height="24" alt="PHP" /></a>
 <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="24" height="24" alt="MySQL" /></a>
@@ -14,7 +14,7 @@
 <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg" width="24" height="24" alt="Bootstrap" /></a>
 <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="24" height="24" alt="React" /></a>
 <a href="https://www.figma.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="24" height="24" alt="Figma" /></a>
-</p>
+</p> -->
 
 <h3>Connect with me:</h3> 
 

@@ -12,15 +12,15 @@
 
 <div align="left">
   <a href="https://www.instagram.com/pedrolucaslco/" target="_blank" alt="Instagram">
-    <img src="https://img.shields.io/badge/-Instagram-ff3a5e?style=for-the-badge&logo=Instagram&logoColor=FFF"/>
+    <img src="https://img.shields.io/badge/-Instagram-075985?style=for-the-badge&logo=Instagram&logoColor=FFF"/>
   </a>
   
   <a href="https://www.linkedin.com/in/pedrolucaslcosta" alt="Linkedin">
-    <img src="https://img.shields.io/badge/-Linkedin-ff3a5e?style=for-the-badge&logo=Linkedin&logoColor=FFF"/>
+    <img src="https://img.shields.io/badge/-Linkedin-075985?style=for-the-badge&logo=Linkedin&logoColor=FFF"/>
   </a>
   
   <a href="http://www.twitter.com/pedrolucaslco" alt="Twitter">
-    <img src="https://img.shields.io/badge/-Discord-ff3a5e?style=for-the-badge&logo=Discord&logoColor=FFF"/>
+    <img src="https://img.shields.io/badge/-Discord-075985?style=for-the-badge&logo=Discord&logoColor=FFF"/>
   </a>
 </div>
 

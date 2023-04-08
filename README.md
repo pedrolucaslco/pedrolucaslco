@@ -4,7 +4,11 @@
 
 <p>Sou um Desenvolverdor Frontend Junior e UI/UX Designer, aos poucos migrando da área do Design Gráfico para o Desenvolvimento Web. Técnico em Informática para Internet pelo Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN) e cursando Design Gráfico na Universidade Potiguar (UnP).</p>
 
-<p>Atualmente trabalhando com Laravel e estudando React.js.</p>
+<p>I'm a Junior Frontend Developer and UI/UX Designer, gradually migrating from Graphic Design area to Web Development. Technician in Internet Computing at the Federal Institute of Education, Science and Technology of Rio Grande do Norte (IFRN) and studying Graphic Design at the Potiguar University (UnP).</p>
+
+<p>(PT) Atualmente trabalhando com Laravel e estudando React.js.</p>
+<p>(EN) Currently working with Laravel and studying React.js.</p>
+
 
 <h3>Caso queira acompanhar meus conteúdos:</h3> 
 

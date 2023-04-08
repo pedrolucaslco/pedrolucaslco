@@ -1,16 +1,29 @@
-Hi 👋 My name is Pedro Lucas
-===================================================================================================================================
+<!-- <img src="logo.svg" width="300px" min-width="300px" max-width="300px" align="right" alt="Logo"> -->
 
-Web Developer and Designer
---------------------------
+<h2>Hello World ☕</h2>
 
-Web Developer | UI Designer | Web Computing Technical | Graphic Design Undergraduate
+<p>Sou um Desenvolverdor Frontend Junior e UI/UX Designer, aos poucos migrando da área do Design Gráfico para o Desenvolvimento Web. Técnico em Informática para Internet pelo Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN) e cursando Design Gráfico na Universidade Potiguar (UnP).</p>
 
-*   🌍  I'm based in Brazil
-*   ✉️  You can contact me at [pedrolucaslcosta@gmail.com](mailto:pedrolucaslcosta@gmail.com)
-*   🚀  I'm currently working on [To-do List (React.js App)](http://https://to-do-list-react-js-pedrolucaslcosta.netlify.app)
-*   🧠  I'm learning React.js and Laravel
-   
+</br>
+
+<p>Atualmente trabalhando com Laravel e estudando React.js.</p
+
+<!-- <h3>Caso queira acompanhar meus conteúdos:</h3> 
+
+<div align="left">
+  <a href="https://www.instagram.com/iuricode/" alt="Instagram">
+    <img src="https://img.shields.io/badge/-Instagram-ff3a5e?style=for-the-badge&logo=Instagram&logoColor=FFF"/>
+  </a>
+  
+  <a href="https://www.linkedin.com/in/iuricode" alt="Linkedin">
+    <img src="https://img.shields.io/badge/-Linkedin-ff3a5e?style=for-the-badge&logo=Linkedin&logoColor=FFF"/>
+  </a>
+  
+  <a href="https://discord.gg/QevDJqCzaY" alt="Discord">
+    <img src="https://img.shields.io/badge/-Discord-ff3a5e?style=for-the-badge&logo=Discord&logoColor=FFF"/>
+  </a>
+</div> -->
+
 ### Skills 
 <p align="left">
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript" /></a>

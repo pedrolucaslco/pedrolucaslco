@@ -61,7 +61,7 @@ export default function Home() {
 
             <div className=" 
             col-span-3 lg:col-span-2 md:col-span-2 sm:col-span-3
-            border-neutral-700 border
+            dark:border-neutral-700 border-neutral-300 border
             rounded-2xl lg:p-10 sm:p-8 p-6
             ">
               <h2 className="text-3xl sm:text-5xl font-semibold text-neutral-900 dark:text-neutral-200">Hello World🖱️</h2>
@@ -88,25 +88,25 @@ export default function Home() {
             <div className="
             col-span-3 lg:col-span-1 md:col-span-1 order-first sm:order-first md:order-2 h-64 sm:h-96
             rounded-3xl">
-              <Image className="rounded-2xl h-full w-full object-scale-down sm:object-scale-down md:object-cover border-neutral-700 border" src={model3d} />
+              <Image className="rounded-2xl h-full w-full object-scale-down sm:object-scale-down md:object-cover dark:border-neutral-700 border-neutral-300 border" src={model3d} />
             </div>
 
             
           </div>
 
-          <div className="p-5 mt-4 rounded-2xl border-neutral-700 border flex flex-col items-center">
+          <div className="p-5 mt-4 rounded-2xl dark:border-neutral-700 border-neutral-300 border flex flex-col items-center">
             <div className="text-base sm:text-xl flex justify-center sm:justify-start gap-3 sm:gap-4 text-black flex-wrap">
-              <a title="test" id="tools" className="p-3 rounded-2xl border-neutral-700 border text-sky-800 dark:text-sky-100"><FaLaravel /><span>Laravel</span></a>
-              <a title="test" id="tools" className="p-3 rounded-2xl border-neutral-700 border text-sky-800 dark:text-sky-100"><FaGithubSquare /><span>Git</span></a>
-              <a title="test" id="tools" className="p-3 rounded-2xl border-neutral-700 border text-sky-800 dark:text-sky-100"><FaPhp /><span>PhP</span></a>
-              <a title="test" id="tools" className="p-3 rounded-2xl border-neutral-700 border text-sky-800 dark:text-sky-100"><FaHtml5 /><span>HTML</span></a>
-              <a title="test" id="tools" className="p-3 rounded-2xl border-neutral-700 border text-sky-800 dark:text-sky-100"><FaCss3Alt /><span>CSS</span></a>
-              <a title="test" id="tools" className="p-3 rounded-2xl border-neutral-700 border text-sky-800 dark:text-sky-100"><FaFigma /><span>Figma</span></a>
-              <a title="test" id="tools" className="p-3 rounded-2xl border-neutral-700 border text-sky-800 dark:text-sky-100"><GrMysql /><span>MySql</span></a>
-              <a title="test" id="tools" className="p-3 rounded-2xl border-neutral-700 border text-sky-800 dark:text-sky-100"><FaReact /><span>React.js</span></a>
-              <a title="test" id="tools" className="p-3 rounded-2xl border-neutral-700 border text-sky-800 dark:text-sky-100"><FaBootstrap /><span>Bootstrap</span></a>
-              <a title="test" id="tools" className="p-3 rounded-2xl border-neutral-700 border text-sky-800 dark:text-sky-100"><SiJavascript /><span>Javascript</span></a>
-              <a title="test" id="tools" className="p-3 rounded-2xl border-neutral-700 border text-sky-800 dark:text-sky-100"><SiTailwindcss /><span>TailwindCSS</span></a>
+              <a title="test" id="tools" className="p-3 rounded-2xl dark:border-neutral-700 border-neutral-300 border text-sky-800 dark:text-sky-100"><FaLaravel /><span>Laravel</span></a>
+              <a title="test" id="tools" className="p-3 rounded-2xl dark:border-neutral-700 border-neutral-300 border text-sky-800 dark:text-sky-100"><FaGithubSquare /><span>Git</span></a>
+              <a title="test" id="tools" className="p-3 rounded-2xl dark:border-neutral-700 border-neutral-300 border text-sky-800 dark:text-sky-100"><FaPhp /><span>PhP</span></a>
+              <a title="test" id="tools" className="p-3 rounded-2xl dark:border-neutral-700 border-neutral-300 border text-sky-800 dark:text-sky-100"><FaHtml5 /><span>HTML</span></a>
+              <a title="test" id="tools" className="p-3 rounded-2xl dark:border-neutral-700 border-neutral-300 border text-sky-800 dark:text-sky-100"><FaCss3Alt /><span>CSS</span></a>
+              <a title="test" id="tools" className="p-3 rounded-2xl dark:border-neutral-700 border-neutral-300 border text-sky-800 dark:text-sky-100"><FaFigma /><span>Figma</span></a>
+              <a title="test" id="tools" className="p-3 rounded-2xl dark:border-neutral-700 border-neutral-300 border text-sky-800 dark:text-sky-100"><GrMysql /><span>MySql</span></a>
+              <a title="test" id="tools" className="p-3 rounded-2xl dark:border-neutral-700 border-neutral-300 border text-sky-800 dark:text-sky-100"><FaReact /><span>React.js</span></a>
+              <a title="test" id="tools" className="p-3 rounded-2xl dark:border-neutral-700 border-neutral-300 border text-sky-800 dark:text-sky-100"><FaBootstrap /><span>Bootstrap</span></a>
+              <a title="test" id="tools" className="p-3 rounded-2xl dark:border-neutral-700 border-neutral-300 border text-sky-800 dark:text-sky-100"><SiJavascript /><span>Javascript</span></a>
+              <a title="test" id="tools" className="p-3 rounded-2xl dark:border-neutral-700 border-neutral-300 border text-sky-800 dark:text-sky-100"><SiTailwindcss /><span>TailwindCSS</span></a>
             </div>  
           </div>
 

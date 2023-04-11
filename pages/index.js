@@ -31,7 +31,7 @@ export default function Home() {
 
         <section className="min-h-screen">
           <nav className="py-10 mb-6 flex justify-between items-center">
-            <h1 className="text-lg font-worksans dark:text-gray-50">Pedro Lucas</h1>
+            <h1 className="text-lg  dark:text-gray-50">Pedro Lucas</h1>
             <ul className="flex items-center">
               <li>
                 <a className=" text-neutral-400 py-2 rounded-full mr-8 transition-all duration-1000 hover:shadow-lg hover:text-neutral-100" href="https://github.com/pedrolucaslcosta" target="_blank" rel="noreferrer">

@@ -8,6 +8,7 @@ import { FiChevronDown } from "react-icons/fi";
 import Image from "next/image";
 import profilePic from "../public/pedrolucas-profile-pic.jpg";
 import model3d from "../public/3d.png";
+import thumbNoisePlayer from "../public/NoisePlayer.png";
 import design from "../public/design-test.png";
 import { useState } from "react";
 
@@ -25,11 +26,11 @@ export default function Home() {
 
       <main className="
       bg-white dark:bg-black 
-      px-4 sm:px-4 md:px-8 lg:px-60
+      px-4 sm:px-4 md:px-16 lg:px-24 xl:px-40 2xl:px-40
       transition-all duration-500
       ">
 
-        <section className="min-h-screen">
+        <section className="min-h-screen pb-40">
           <nav className="py-10 mb-6 flex justify-between items-center">
             <h1 className="text-lg  dark:text-gray-50">Pedro Lucas</h1>
             <ul className="flex items-center">
@@ -108,6 +109,17 @@ export default function Home() {
               <a title="test" id="tools" className="p-3 rounded-2xl dark:border-neutral-700 border-neutral-300 border text-sky-800 dark:text-sky-100"><SiJavascript /><span>Javascript</span></a>
               <a title="test" id="tools" className="p-3 rounded-2xl dark:border-neutral-700 border-neutral-300 border text-sky-800 dark:text-sky-100"><SiTailwindcss /><span>TailwindCSS</span></a>
             </div>  
+          </div>
+
+          <div className="p-5 mt-4 text-slate-100 rounded-2xl dark:border-neutral-700 border-neutral-300 border flex flex-col items-center">
+            Projects
+          </div>
+
+          <div className="mt-4 text-slate-100 rounded-2xl  grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-2 items-center">
+            <div className="flex flex-col col-span-2 lg:col-span-3 rounded-2xl gap-4 overflow-hidden">
+              <Image src={thumbNoisePlayer} className="rounded-2xl" />
+              <span className="text-lg">NoisePlayer</span>
+            </div>
           </div>
 
           {/* <div className="p-10 pb-5 mt-4 rounded-2xl

@@ -68,7 +68,7 @@ export default function Home() {
           </nav>
 
           <div className="text-neutral-50 flex flex-col justify-center h-full items-center text-center gap-4">
-            <h1 className="text-5xl ">Desenvolvedor <span className="underline decoration-sky-800">Frontend</span><br></br>& Ux/UI designer</h1>
+            <h1 className="text-5xl ">Desenvolvedor <span className="underline decoration-sky-800">Frontend</span><br></br>& UI/UX designer</h1>
             <p>Javascript • React • TailwindCSS • Git • PHP • Laravel • Bootstrap • Figma</p>
             <a className="bg-neutral-50 text-black py-2 px-6 rounded" href="https://github.com/pedrolucaslcosta" target="_blank" rel="noreferrer">
                 Github
@@ -82,7 +82,7 @@ export default function Home() {
         <section className="min-h-screen pb-40">
 
         <div id="About-me" className="flex items-center text-center justify-center py-16 text-3xl text-neutral-50">
-            About me
+            Sobre mim
         </div>
 
           <div className="grid grid-cols-3 gap-4">
@@ -98,11 +98,13 @@ export default function Home() {
               </h2>
               {/* <h3 className="text-xl sm:text-2xl py-1 sm:py-2 text-neutral-500 dark:text-gray-400">Developer and designer.</h3> */}
               <p className="text-base sm:text-md pt-5 pb-8 sm:py-5 text-neutral-400">
-                {"I'm a Junior Frontend Developer and UI/UX Designer. Technician in Internet Computing at the Federal Institute of Rio Grande do Norte (IFRN) and studying Graphic Design at the Potiguar University (UnP). Currently working with Laravel and studying React.js."}
+                {/* {"I'm a Junior Frontend Developer and UI/UX Designer. Technician in Internet Computing at the Federal Institute of Rio Grande do Norte (IFRN) and studying Graphic Design at the Potiguar University (UnP). Currently working with Laravel and studying React.js."} */}
+                {/* {"Sou desenvolvedor frontend junior e UI/UX designer, técnico em Informática para Internet no Instituto Federal do Rio Grande do Norte (IFRN) e graduando em Design Gráfico na Universidade Potiguar (UnP). Atualmente trabalho com Laravel e estou estudando React.js."} */}
+                {"Meu nome é Pedro. Atualmente trabalho como Desenvolvedor Fullstack Junior em Laravel e estou estudando React.js. Busco integrar design e código para proporcionar uma experiência de uso intuitiva e simplificada nos meus projetos."}
               </p>
               <div className="text-base sm:text-xl flex justify-center sm:justify-start gap-3 sm:gap-4 text-black">
                 <a href="mailto:pedrolucaslcosta@gmail.com" target="_blank" rel="noreferrer" className="text-sm font-medium rounded bg-neutral-50 flex items-center px-3">
-                  Contact me
+                  Fale comigo
                 </a>
                 <a href="https://www.instagram.com/pedrolucaslco" target="_blank" rel="noreferrer" className="bg-neutral-50 p-2 rounded">
                   <AiFillInstagram />

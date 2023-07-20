@@ -11,6 +11,7 @@ import model3d from "../public/3d.png";
 import thumbNoisePlayer from "../public/NoisePlayer.png";
 import design from "../public/design-test.png";
 import { useState } from "react";
+import { ChevronDownCircle, ChevronUp, Hand, HandIcon, MousePointer2 } from "lucide-react";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -24,22 +25,36 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <a href="#" className="rounded-full bg-neutral-50 fixed bottom-4 right-4 p-3">
+        <ChevronUp/>
+      </a>
+
       <main className="
       bg-white dark:bg-black 
       px-4 sm:px-4 md:px-16 lg:px-24 xl:px-40 2xl:px-40
       transition-all duration-500
       ">
 
-        <section className="min-h-screen pb-40">
-          <nav className="py-10 mb-6 flex justify-between items-center">
-            <h1 className="text-lg  dark:text-gray-50">Pedro Lucas</h1>
-            <ul className="flex items-center">
+        <section className="h-screen flex flex-col">
+          <nav className="py-10 flex justify-between items-center">
+            <h1 className="text-2xl dark:text-neutral-50 uppercase font-bold tracking-[.3rem]">Pedro Lucas</h1>
+            <ul className="flex items-center gap-4">
               <li>
-                <a className=" text-neutral-400 py-2 rounded-full mr-8 transition-all duration-1000 hover:shadow-lg hover:text-neutral-100" href="https://github.com/pedrolucaslcosta" target="_blank" rel="noreferrer">
-                  Github
+                <a className="text-neutral-50" href="#">Home</a>
+              </li>
+              <li><a className="text-neutral-50" href="#About-me">Sobre mim</a></li>
+              <li><a className="text-neutral-50" href="#Portfolio">Portfolio</a></li>
+              <li><a className="text-neutral-50" href="#Experiences">Experiências</a></li>
+              <li><a className="text-neutral-50" href="#Contact">Contato</a></li>
+              <li>
+                <a className="bg-neutral-50 text-black py-2 px-6 rounded" href="https://github.com/pedrolucaslcosta" target="_blank" rel="noreferrer">
+                Github
                 </a>
               </li>
-              <li>
+              {/* <li>
+                <div className="w-0.5 bg-neutral-700 h-8"></div>
+              </li> */}
+              {/* <li>
 
                 {darkMode ? (
                   <BsFillSunFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl text-neutral-700 dark:text-neutral-50 dark:hover:text-neutral-400 hover:text-neutral-500 transition-all duration-500 hover:animate-spin" />
@@ -48,54 +63,73 @@ export default function Home() {
                     <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl text-neutral-700 dark:text-neutral-50 dark:hover:text-neutral-400 hover:text-neutral-500 transition-all duration-500 hover:animate-pulse" />
                   )}
 
-              </li>
-
-              <li>
-                <a className="bg-gradient-to-r from-sky-600 to-sky-700 text-white px-5 py-2 rounded-full ml-8 transition-all duration-1000 hover:shadow-lg">
-                  Resume
-                </a>
-              </li>
+              </li> */}
             </ul>
           </nav>
 
+          <div className="text-neutral-50 flex flex-col justify-center h-full items-center text-center gap-4">
+            <h1 className="text-5xl ">Desenvolvedor <span className="underline decoration-sky-800">Frontend</span><br></br>& Ux/UI designer</h1>
+            <p>Javascript • React • TailwindCSS • Git • PHP • Laravel • Bootstrap • Figma</p>
+            <a className="bg-neutral-50 text-black py-2 px-6 rounded" href="https://github.com/pedrolucaslcosta" target="_blank" rel="noreferrer">
+                Github
+            </a>
+            <a className="mt-8 text-neutral-800 animate-bounce" href="#About-me">
+            <ChevronDownCircle/>
+            </a>
+          </div>
+
+        </section>
+        <section className="min-h-screen pb-40">
+
+        <div id="About-me" className="flex items-center text-center justify-center py-16 text-3xl text-neutral-50">
+            About me
+        </div>
+
           <div className="grid grid-cols-3 gap-4">
 
-            <div className=" 
+            <div className="  rounded-lg
             col-span-3 lg:col-span-2 md:col-span-2 sm:col-span-3
             dark:border-neutral-700 border-neutral-300 border
-            rounded-2xl lg:p-10 sm:p-8 p-6
+             lg:p-10 sm:p-8 p-6
             ">
-              <h2 className="text-3xl sm:text-5xl font-semibold text-neutral-900 dark:text-neutral-200">Hello World🖱️</h2>
+              <h2 className="text-3xl sm:text-5xl font-semibold text-neutral-900 dark:text-neutral-200 flex items-center gap-4">
+                Hello World 
+                <MousePointer2 className="animate-bounce" size={32}/> 
+              </h2>
               {/* <h3 className="text-xl sm:text-2xl py-1 sm:py-2 text-neutral-500 dark:text-gray-400">Developer and designer.</h3> */}
-              <p className="text-base sm:text-md pt-5 pb-8 sm:py-5 text-gray-500 dark:text-gray-400">
+              <p className="text-base sm:text-md pt-5 pb-8 sm:py-5 text-neutral-400">
                 {"I'm a Junior Frontend Developer and UI/UX Designer. Technician in Internet Computing at the Federal Institute of Rio Grande do Norte (IFRN) and studying Graphic Design at the Potiguar University (UnP). Currently working with Laravel and studying React.js."}
               </p>
               <div className="text-base sm:text-xl flex justify-center sm:justify-start gap-3 sm:gap-4 text-black">
-                <a href="mailto:pedrolucaslcosta@gmail.com" target="_blank" rel="noreferrer" className="text-sm font-semibold rounded-full bg-sky-800 text-sky-100 flex items-center px-5">
+                <a href="mailto:pedrolucaslcosta@gmail.com" target="_blank" rel="noreferrer" className="text-sm font-medium rounded bg-neutral-50 flex items-center px-3">
                   Contact me
                 </a>
-                <a href="https://www.instagram.com/pedrolucaslco" target="_blank" rel="noreferrer" className="bg-sky-800 p-3 rounded-full dark:bg-sky-800 text-sky-100">
+                <a href="https://www.instagram.com/pedrolucaslco" target="_blank" rel="noreferrer" className="bg-neutral-50 p-2 rounded">
                   <AiFillInstagram />
                 </a>
-                <a href="https://www.linkedin.com/in/pedrolucaslcosta" target="_blank" rel="noreferrer" className="bg-sky-800 p-3 rounded-full dark:bg-sky-800 text-sky-100">
+                <a href="https://www.linkedin.com/in/pedrolucaslcosta" target="_blank" rel="noreferrer" className="bg-neutral-50 p-2 rounded">
                   <AiFillLinkedin />
                 </a>
-                <a href="https://www.twitter.com/pedrolucaslco" target="_blank" rel="noreferrer" className="bg-sky-800 p-3  rounded-full dark:bg-sky-800 text-sky-100">
+                <a href="https://www.twitter.com/pedrolucaslco" target="_blank" rel="noreferrer" className="bg-neutral-50 p-2 rounded">
                   <AiFillTwitterCircle />
                 </a>
               </div>
             </div>
 
             <div className="
-            col-span-3 lg:col-span-1 md:col-span-1 order-first sm:order-first md:order-2 h-64 sm:h-96
-            rounded-3xl">
-              <Image className="rounded-2xl h-full w-full object-scale-down sm:object-scale-down md:object-cover dark:border-neutral-700 border-neutral-300 border" src={model3d} />
+            col-span-3 lg:col-span-1 md:col-span-1 order-first rounded-lg sm:order-first md:order-2 h-64 sm:h-96
+            ">
+              <Image className="h-full w-full rounded-lg object-scale-down sm:object-scale-down md:object-cover dark:border-neutral-700 border-neutral-300 border" src={model3d} />
             </div>
 
             
           </div>
 
-          <div className="p-5 mt-4 rounded-2xl dark:border-neutral-700 border-neutral-300 border flex flex-col items-center">
+          <div id="Portfolio" className="flex items-center text-center justify-center py-16 text-3xl text-neutral-50">
+            Portfolio
+        </div>
+
+          {/* <div className="p-5 mt-4 dark:border-neutral-700 border-neutral-300 border flex flex-col items-center">
             <div className="text-base sm:text-xl flex justify-center sm:justify-start gap-3 sm:gap-4 text-black flex-wrap">
               <a title="test" id="tools" className="p-3 rounded-2xl dark:border-neutral-700 border-neutral-300 border text-sky-800 dark:text-sky-100"><FaLaravel /><span>Laravel</span></a>
               <a title="test" id="tools" className="p-3 rounded-2xl dark:border-neutral-700 border-neutral-300 border text-sky-800 dark:text-sky-100"><FaGithubSquare /><span>Git</span></a>
@@ -109,15 +143,13 @@ export default function Home() {
               <a title="test" id="tools" className="p-3 rounded-2xl dark:border-neutral-700 border-neutral-300 border text-sky-800 dark:text-sky-100"><SiJavascript /><span>Javascript</span></a>
               <a title="test" id="tools" className="p-3 rounded-2xl dark:border-neutral-700 border-neutral-300 border text-sky-800 dark:text-sky-100"><SiTailwindcss /><span>TailwindCSS</span></a>
             </div>  
-          </div>
+          </div> */}
 
-          <div className="p-5 mt-4 text-slate-100 rounded-2xl dark:border-neutral-700 border-neutral-300 border flex flex-col items-center">
-            Projects
-          </div>
+      
 
-          <div className="mt-4 text-slate-100 rounded-2xl  grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-2 items-center">
-            <div className="flex flex-col col-span-2 lg:col-span-3 rounded-2xl gap-4 overflow-hidden">
-              <Image src={thumbNoisePlayer} className="rounded-2xl" />
+          <div className=" text-slate-100  grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-2 items-center">
+            <div className="flex flex-col col-span-2 lg:col-span-3  gap-4 overflow-hidden">
+              <Image src={thumbNoisePlayer} className="rounded-lg" />
               <span className="text-lg">NoisePlayer</span>
             </div>
           </div>

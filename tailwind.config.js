@@ -13,6 +13,15 @@ module.exports = {
     extend: {
       fontFamily: {
         worksans: 'Work Sans',
+      },
+      keyframes: {
+        motion_bg: {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': {backgroundPosition: '100% 50%'}
+        }
+      },
+      animation: {
+        motion_bg: 'motion_bg 3s ease infinite',
       }
     },
   },

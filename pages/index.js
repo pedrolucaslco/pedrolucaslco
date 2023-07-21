@@ -1,7 +1,20 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
-import { AiFillLinkedin, AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai";
-import { FaBootstrap, FaCss3Alt, FaFigma, FaGithubSquare, FaHtml5, FaLaravel, FaPhp, FaReact } from "react-icons/fa";
+import {
+  AiFillLinkedin,
+  AiFillInstagram,
+  AiFillTwitterCircle,
+} from "react-icons/ai";
+import {
+  FaBootstrap,
+  FaCss3Alt,
+  FaFigma,
+  FaGithubSquare,
+  FaHtml5,
+  FaLaravel,
+  FaPhp,
+  FaReact,
+} from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import { SiJavascript, SiTailwindcss } from "react-icons/si";
 import { FiChevronDown } from "react-icons/fi";
@@ -11,7 +24,14 @@ import model3d from "../public/3d.png";
 import thumbNoisePlayer from "../public/NoisePlayer.png";
 import design from "../public/design-test.png";
 import { useState } from "react";
-import { ChevronDownCircle, ChevronUp, Hand, HandIcon, MousePointer2 } from "lucide-react";
+import {
+  ChevronDownCircle,
+  ChevronUp,
+  Hand,
+  HandIcon,
+  MousePointer2,
+} from "lucide-react";
+import NavItem from "./components/NavItem";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -25,36 +45,38 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <a href="#" className="rounded-full bg-neutral-50 fixed bottom-4 right-4 p-3">
-        <ChevronUp/>
+      <a
+        href="#"
+        className="rounded-full bg-neutral-50 fixed bottom-4 right-4 p-3"
+      >
+        <ChevronUp />
       </a>
 
-      <main className="
-      bg-white dark:bg-black 
+      <nav
+        className="bg-black flex justify-between py-6 fixed w-screen z-50
       px-4 sm:px-4 md:px-16 lg:px-24 xl:px-40 2xl:px-40
-      transition-all duration-500
-      ">
+      "
+      >
+        <h1 className="text-2xl dark:text-neutral-50 uppercase font-bold tracking-[.3rem]">
+          Pedro Lucas
+        </h1>
+        <ul className="flex items-center gap-4">
+          <NavItem text={"Início"} href={"#"} type={"link"} />
+          <NavItem text={"Sobre mim"} href={"#about-me"} type={"link"} />
+          <NavItem text={"Portfolio"} href={"#portfolio"} type={"link"} />
+          {/* <NavItem text={"Experiências"} href={"#experiences"} type={"link"} /> */}
+          {/* <NavItem text={"Contato"} href={"#contact"} type={"link"} /> */}
+          <NavItem
+            text={"GitHub"}
+            href={"https://github.com/pedrolucaslcosta"}
+            type={"button"}
+            target={"_blank"}
+          />
 
-        <section className="h-screen flex flex-col">
-          <nav className="py-10 flex justify-between items-center">
-            <h1 className="text-2xl dark:text-neutral-50 uppercase font-bold tracking-[.3rem]">Pedro Lucas</h1>
-            <ul className="flex items-center gap-4">
-              <li>
-                <a className="text-neutral-50" href="#">Home</a>
-              </li>
-              <li><a className="text-neutral-50" href="#About-me">Sobre mim</a></li>
-              <li><a className="text-neutral-50" href="#Portfolio">Portfolio</a></li>
-              <li><a className="text-neutral-50" href="#Experiences">Experiências</a></li>
-              <li><a className="text-neutral-50" href="#Contact">Contato</a></li>
-              <li>
-                <a className="bg-neutral-50 text-black py-2 px-6 rounded" href="https://github.com/pedrolucaslcosta" target="_blank" rel="noreferrer">
-                Github
-                </a>
-              </li>
-              {/* <li>
+          {/* <li>
                 <div className="w-0.5 bg-neutral-700 h-8"></div>
               </li> */}
-              {/* <li>
+          {/* <li>
 
                 {darkMode ? (
                   <BsFillSunFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl text-neutral-700 dark:text-neutral-50 dark:hover:text-neutral-400 hover:text-neutral-500 transition-all duration-500 hover:animate-spin" />
@@ -64,72 +86,124 @@ export default function Home() {
                   )}
 
               </li> */}
-            </ul>
-          </nav>
+        </ul>
+      </nav>
 
+      <main
+        className="
+      bg-white dark:bg-black 
+      px-4 sm:px-4 md:px-16 lg:px-24 xl:px-40 2xl:px-40
+      transition-all duration-500
+      "
+      >
+        <section className="h-screen flex flex-col pt-24      ">
           <div className="text-neutral-50 flex flex-col justify-center h-full items-center text-center gap-4">
-            <h1 className="text-5xl ">Desenvolvedor <span className="underline decoration-sky-800">Frontend</span><br></br>& UI/UX designer</h1>
-            <p>Javascript • React • TailwindCSS • Git • PHP • Laravel • Bootstrap • Figma</p>
-            <a className="bg-neutral-50 text-black py-2 px-6 rounded" href="https://github.com/pedrolucaslcosta" target="_blank" rel="noreferrer">
-                Github
+            <h1 className="text-5xl ">
+              Desenvolvedor{" "}
+              <span className="underline decoration-sky-800">Frontend</span>
+              <br></br>& UI/UX designer
+            </h1>
+            <p>
+              Javascript • React • TailwindCSS • Git • PHP • Laravel • Bootstrap
+              • Figma
+            </p>
+            <a
+              className="bg-neutral-50 text-black py-2 px-6 rounded"
+              href="https://github.com/pedrolucaslcosta"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
             </a>
-            <a className="mt-8 text-neutral-800 animate-bounce" href="#About-me">
-            <ChevronDownCircle/>
+            <a
+              className="mt-8 gap-2   text-neutral-800 animate-bounce hover:text-neutral-50 transition-all duration-300"
+              href="#about-me"
+            >
+              <ChevronDownCircle size={32} />
             </a>
           </div>
-
         </section>
+
         <section className="min-h-screen pb-40">
-
-        <div id="About-me" className="flex items-center text-center justify-center py-16 text-3xl text-neutral-50">
+          <div
+            id="about-me"
+            className="flex items-center text-center justify-center pt-24 pb-16 text-3xl text-neutral-50"
+          >
             Sobre mim
-        </div>
+          </div>
 
-          <div className="grid grid-cols-3 gap-4">
-
-            <div className="  rounded-lg
-            col-span-3 lg:col-span-2 md:col-span-2 sm:col-span-3
-            dark:border-neutral-700 border-neutral-300 border
-             lg:p-10 sm:p-8 p-6
-            ">
+          <div className="grid grid-cols-5 gap-4">
+           
+            <div
+              className="rounded-lg
+              col-span-5 lg:col-span-3 md:col-span-3 sm:col-span-3
+              dark:border-neutral-700 border-neutral-300 border
+              lg:p-10 sm:p-8 p-6 flex flex-col gap-4"
+            >
               <h2 className="text-3xl sm:text-5xl font-semibold text-neutral-900 dark:text-neutral-200 flex items-center gap-4">
-                Hello World 
-                <MousePointer2 className="animate-bounce" size={32}/> 
+                Hello World
+                <MousePointer2 className="animate-bounce" size={32} />
               </h2>
-              {/* <h3 className="text-xl sm:text-2xl py-1 sm:py-2 text-neutral-500 dark:text-gray-400">Developer and designer.</h3> */}
-              <p className="text-base sm:text-md pt-5 pb-8 sm:py-5 text-neutral-400">
-                {/* {"I'm a Junior Frontend Developer and UI/UX Designer. Technician in Internet Computing at the Federal Institute of Rio Grande do Norte (IFRN) and studying Graphic Design at the Potiguar University (UnP). Currently working with Laravel and studying React.js."} */}
-                {/* {"Sou desenvolvedor frontend junior e UI/UX designer, técnico em Informática para Internet no Instituto Federal do Rio Grande do Norte (IFRN) e graduando em Design Gráfico na Universidade Potiguar (UnP). Atualmente trabalho com Laravel e estou estudando React.js."} */}
-                {"Meu nome é Pedro. Atualmente trabalho como Desenvolvedor Fullstack Junior em Laravel e estou estudando React.js. Busco integrar design e código para proporcionar uma experiência de uso intuitiva e simplificada nos meus projetos."}
+
+              <p className="text-base sm:text-md text-neutral-400">
+                {
+                  "Meu nome é Pedro. Atualmente trabalho como Desenvolvedor Fullstack Junior em Laravel e estou estudando React.js. Busco integrar design e código para proporcionar uma experiência de uso intuitiva e simplificada nos meus projetos."
+                }
               </p>
-              <div className="text-base sm:text-xl flex justify-center sm:justify-start gap-3 sm:gap-4 text-black">
-                <a href="mailto:pedrolucaslcosta@gmail.com" target="_blank" rel="noreferrer" className="text-sm font-medium rounded bg-neutral-50 flex items-center px-3">
+
+              <div className="text-base sm:text-xl flex justify-center sm:justify-start mt-auto gap-3 sm:gap-4 text-black">
+                <a
+                  href="mailto:pedrolucaslcosta@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm font-medium rounded bg-neutral-50 flex items-center px-3"
+                >
                   Fale comigo
                 </a>
-                <a href="https://www.instagram.com/pedrolucaslco" target="_blank" rel="noreferrer" className="bg-neutral-50 p-2 rounded">
+                <a
+                  href="https://www.instagram.com/pedrolucaslco"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="bg-neutral-50 p-2 rounded"
+                >
                   <AiFillInstagram />
                 </a>
-                <a href="https://www.linkedin.com/in/pedrolucaslcosta" target="_blank" rel="noreferrer" className="bg-neutral-50 p-2 rounded">
+                <a
+                  href="https://www.linkedin.com/in/pedrolucaslcosta"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="bg-neutral-50 p-2 rounded"
+                >
                   <AiFillLinkedin />
                 </a>
-                <a href="https://www.twitter.com/pedrolucaslco" target="_blank" rel="noreferrer" className="bg-neutral-50 p-2 rounded">
+                <a
+                  href="https://www.twitter.com/pedrolucaslco"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="bg-neutral-50 p-2 rounded"
+                >
                   <AiFillTwitterCircle />
                 </a>
               </div>
             </div>
-
-            <div className="
-            col-span-3 lg:col-span-1 md:col-span-1 order-first rounded-lg sm:order-first md:order-2 h-64 sm:h-96
-            ">
-              <Image className="h-full w-full rounded-lg object-scale-down sm:object-scale-down md:object-cover dark:border-neutral-700 border-neutral-300 border" src={model3d} />
+            <div
+              className="
+            col-span-5 lg:col-span-2 md:col-span-2 rounded-lg  h-64 sm:h-96
+            "
+            >
+              <Image
+                className="h-full w-full rounded-lg object-scale-down sm:object-scale-down md:object-cover dark:border-neutral-700 border-neutral-300 border"
+                src={model3d}
+              />
             </div>
-
-            
           </div>
 
-          <div id="Portfolio" className="flex items-center text-center justify-center py-16 text-3xl text-neutral-50">
+          <div
+            id="portfolio"
+            className="flex items-center text-center justify-center pt-24 pb-16 text-3xl text-neutral-50"
+          >
             Portfolio
-        </div>
+          </div>
 
           {/* <div className="p-5 mt-4 dark:border-neutral-700 border-neutral-300 border flex flex-col items-center">
             <div className="text-base sm:text-xl flex justify-center sm:justify-start gap-3 sm:gap-4 text-black flex-wrap">
@@ -147,12 +221,20 @@ export default function Home() {
             </div>  
           </div> */}
 
-      
-
           <div className=" text-slate-100  grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-2 items-center">
-            <div className="flex flex-col col-span-2 lg:col-span-3  gap-4 overflow-hidden">
+            <div className="flex flex-col gap-4 overflow-hidden">
               <Image src={thumbNoisePlayer} className="rounded-lg" />
               <span className="text-lg">NoisePlayer</span>
+            </div>
+            <div className="flex flex-col gap-4 overflow-hidden">
+              {/* <Image src={thumbNoisePlayer} className="rounded-lg" /> */}
+              <div className="bg-red-700 opacity-25 w-full aspect-[4/3] rounded-lg"></div>
+              <span className="text-lg">Next Project (soon)</span>
+            </div>
+            <div className="flex flex-col gap-4 overflow-hidden">
+              {/* <Image src={thumbNoisePlayer} className="rounded-lg" /> */}
+              <div className="bg-neutral-50 opacity-25 w-full aspect-[4/3] rounded-lg"></div>
+              <span className="text-lg">Next Project (soon)</span>
             </div>
           </div>
 
@@ -241,10 +323,20 @@ export default function Home() {
             </div>
           </div>
            */}
-        
         </section>
-
       </main>
+
+      <footer className="
+      px-4 sm:px-4 md:px-16 lg:px-24 xl:px-40 2xl:px-40
+      flex justify-between bg-black border-t-2 border-neutral-900 text-neutral-600 py-8
+      ">
+        <h1 className="uppercase font-bold tracking-[.3rem]">
+          Pedro Lucas
+        </h1>
+        <span>
+        criado por @pedrolucaslco
+        </span>
+      </footer>
     </div>
-  )
+  );
 }

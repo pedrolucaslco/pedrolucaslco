@@ -12,7 +12,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        worksans: 'Work Sans',
+        space_grotesk: 'Space Grotesk',
       },
       keyframes: {
         motion_bg: {

@@ -21,7 +21,9 @@ import { FiChevronDown } from "react-icons/fi";
 import Image from "next/image";
 import profilePic from "../public/pedrolucas-profile-pic.jpg";
 import model3d from "../public/3d.png";
+// import videoCover from "../public/videoCover.mp4";
 import thumbNoisePlayer from "../public/NoisePlayer.png";
+import thumbTodoListApp from "../public/TodoListApp.png";
 import design from "../public/design-test.png";
 import { useState } from "react";
 import {
@@ -32,6 +34,7 @@ import {
   MousePointer2,
 } from "lucide-react";
 import NavItem from "./components/NavItem";
+import PortfolioItem from "./components/PortfolioItem";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -45,38 +48,71 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <a
-        href="#"
-        className="rounded-full bg-neutral-50 fixed bottom-4 right-4 p-3"
-      >
-        <ChevronUp />
-      </a>
+      <main className="z-10">
+        <a
+          href="#"
+          className="rounded-full bg-neutral-50 fixed bottom-4 right-4 p-3"
+        >
+          <ChevronUp />
+        </a>
 
-      <nav
-        className="bg-black flex justify-between py-6 fixed w-screen z-50
-      px-4 sm:px-4 md:px-16 lg:px-24 xl:px-40 2xl:px-40
-      "
-      >
-        <h1 className="text-2xl dark:text-neutral-50 uppercase font-bold tracking-[.3rem]">
-          Pedro Lucas
-        </h1>
-        <ul className="flex items-center gap-4">
-          <NavItem text={"Início"} href={"#"} type={"link"} />
+        <header class="fixed flex font-space_grotesk flex-wrap sm:justify-start sm:flex-nowrap z-50 w-screen text-sm py-6">
+       
+  <nav class="w-full backdrop-blur-lg
+  px-4 sm:px-4 md:px-16 lg:px-24 xl:px-40 2xl:px-40
+  sm:flex sm:items-center sm:justify-between" aria-label="Global">
+    <div class="flex items-center justify-between">
+      <a class="flex-none text-2xl dark:text-neutral-50 uppercase font-bold tracking-[.3rem]" href="#">Pedro Lucas</a>
+      <div class="sm:hidden">
+        <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800" data-hs-collapse="#navbar-with-collapse" aria-controls="navbar-with-collapse" aria-label="Toggle navigation">
+          <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+          <svg class="hs-collapse-open:block hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="navbar-with-collapse" class="hidden basis-full grow sm:block">
+      <div class="
+      items-center gap-5 hidden md:flex
+      flex-col mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5">
+        <NavItem text={"Início"} href={"#"} type={"link"} />
           <NavItem text={"Sobre mim"} href={"#about-me"} type={"link"} />
           <NavItem text={"Portfolio"} href={"#portfolio"} type={"link"} />
-          {/* <NavItem text={"Experiências"} href={"#experiences"} type={"link"} /> */}
-          {/* <NavItem text={"Contato"} href={"#contact"} type={"link"} /> */}
-          <NavItem
-            text={"GitHub"}
-            href={"https://github.com/pedrolucaslcosta"}
-            type={"button"}
-            target={"_blank"}
+          <NavItem text={"GitHub"} href={"https://github.com/pedrolucaslcosta"} type={"button"} target={"_blank"}
           />
+      </div>
+    </div>
+  </nav>
+</header>
 
-          {/* <li>
+        <nav
+          className="backdrop-blur-lg bg-black/80 font-space_grotesk flex justify-between py-6 fixed w-screen z-50
+      px-4 sm:px-4 md:px-16 lg:px-24 xl:px-40 2xl:px-40
+      "
+        >
+          <h1 className="text-2xl dark:text-neutral-50 uppercase font-bold tracking-[.3rem]">
+            Pedro Lucas
+          </h1>
+          <ul className="items-center gap-4 hidden md:flex">
+            <NavItem text={"Início"} href={"#"} type={"link"} />
+            <NavItem text={"Sobre mim"} href={"#about-me"} type={"link"} />
+            <NavItem text={"Portfolio"} href={"#portfolio"} type={"link"} />
+            {/* <NavItem text={"Experiências"} href={"#experiences"} type={"link"} /> */}
+            {/* <NavItem text={"Contato"} href={"#contact"} type={"link"} /> */}
+            <NavItem
+              text={"GitHub"}
+              href={"https://github.com/pedrolucaslcosta"}
+              type={"button"}
+              target={"_blank"}
+            />
+
+            {/* <li>
                 <div className="w-0.5 bg-neutral-700 h-8"></div>
               </li> */}
-          {/* <li>
+            {/* <li>
 
                 {darkMode ? (
                   <BsFillSunFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl text-neutral-700 dark:text-neutral-50 dark:hover:text-neutral-400 hover:text-neutral-500 transition-all duration-500 hover:animate-spin" />
@@ -86,126 +122,144 @@ export default function Home() {
                   )}
 
               </li> */}
-        </ul>
-      </nav>
+          </ul>
+        </nav>
 
-      <main
-        className="
+        <main
+          className="
       bg-white dark:bg-black 
       px-4 sm:px-4 md:px-16 lg:px-24 xl:px-40 2xl:px-40
       transition-all duration-500
       "
-      >
-        <section className="h-screen flex flex-col pt-24      ">
-          <div className="text-neutral-50 flex flex-col justify-center h-full items-center text-center gap-4">
-            <h1 className="text-5xl ">
-              Desenvolvedor{" "}
-              <span className="underline decoration-sky-800">Frontend</span>
-              <br></br>& UI/UX designer
-            </h1>
-            <p>
-              Javascript • React • TailwindCSS • Git • PHP • Laravel • Bootstrap
-              • Figma
-            </p>
-            <a
-              className="bg-neutral-50 text-black py-2 px-6 rounded"
-              href="https://github.com/pedrolucaslcosta"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Github
-            </a>
-            <a
-              className="mt-8 gap-2   text-neutral-800 animate-bounce hover:text-neutral-50 transition-all duration-300"
-              href="#about-me"
-            >
-              <ChevronDownCircle size={32} />
-            </a>
-          </div>
-        </section>
+        >
+          <section className="h-screen flex flex-col pt-24      ">
+            <div className="text-neutral-50 font-space_grotesk flex flex-col justify-center h-full items-center text-center gap-4">
+              <h1 className="text-5xl ">
+                Desenvolvedor{" "}
+                <span className="underline decoration-sky-800">Frontend</span>
+                <br></br>& UI/UX designer
+              </h1>
+              <p>
+                Javascript • React • TailwindCSS • Git • PHP • Laravel •
+                Bootstrap • Figma
+              </p>
+              <a
+                className="bg-neutral-50 text-black py-2 px-6 rounded"
+                href="https://github.com/pedrolucaslcosta"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Github
+              </a>
+              <a
+                className="mt-8 gap-2   text-neutral-800 animate-bounce hover:text-neutral-50 transition-all duration-300"
+                href="#about-me"
+              >
+                <ChevronDownCircle size={32} />
+              </a>
+            </div>
+          </section>
+        </main>
 
-        <section className="min-h-screen pb-40">
-          <div
-            id="about-me"
+        <main
+          className="px-4 sm:px-4 md:px-16 lg:px-24 xl:px-40 2xl:px-40
+        bg-neutral-100"
+        >
+          <section id="about-me" className="min-h-screen py-40">
+            {/* <div
             className="flex items-center text-center justify-center pt-24 pb-16 text-3xl text-neutral-50"
           >
             Sobre mim
-          </div>
+          </div> */}
 
-          <div className="grid grid-cols-5 gap-4">
-           
-            <div
-              className="rounded-lg
+            <div className="grid grid-cols-5 gap-4 ">
+              <div
+                className="
               col-span-5 lg:col-span-3 md:col-span-3 sm:col-span-3
-              dark:border-neutral-700 border-neutral-300 border
-              lg:p-10 sm:p-8 p-6 flex flex-col gap-4"
-            >
-              <h2 className="text-3xl sm:text-5xl font-semibold text-neutral-900 dark:text-neutral-200 flex items-center gap-4">
-                Hello World
-                <MousePointer2 className="animate-bounce" size={32} />
-              </h2>
+            
+              lg:p-10 sm:p-8 p-6 
+              flex justify-center flex-col gap-4"
+              >
+                <h2 className="text-3xl font-space_grotesk sm:text-5xl font-semibold text-neutral-900">
+                  Design e código integrados.
+                  {/* <MousePointer2 className="animate-bounce" size={32} /> */}
+                </h2>
 
-              <p className="text-base sm:text-md text-neutral-400">
-                {
-                  "Meu nome é Pedro. Atualmente trabalho como Desenvolvedor Fullstack Junior em Laravel e estou estudando React.js. Busco integrar design e código para proporcionar uma experiência de uso intuitiva e simplificada nos meus projetos."
-                }
-              </p>
+                <p className="text-base sm:text-md text-neutral-600">
+                  {/* Com 4 anos de experiência no design, busco.... */}
+                  {
+                    "Atualmente trabalho como Desenvolvedor Fullstack Junior em Laravel e estou estudando React.js. Busco integrar design e código para proporcionar uma experiência de uso intuitiva e simplificada nos meus projetos."
+                  }
+                </p>
 
-              <div className="text-base sm:text-xl flex justify-center sm:justify-start mt-auto gap-3 sm:gap-4 text-black">
-                <a
-                  href="mailto:pedrolucaslcosta@gmail.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-sm font-medium rounded bg-neutral-50 flex items-center px-3"
-                >
-                  Fale comigo
-                </a>
-                <a
-                  href="https://www.instagram.com/pedrolucaslco"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="bg-neutral-50 p-2 rounded"
-                >
-                  <AiFillInstagram />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/pedrolucaslcosta"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="bg-neutral-50 p-2 rounded"
-                >
-                  <AiFillLinkedin />
-                </a>
-                <a
-                  href="https://www.twitter.com/pedrolucaslco"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="bg-neutral-50 p-2 rounded"
-                >
-                  <AiFillTwitterCircle />
-                </a>
+                <div className="text-base sm:text-xl flex justify-center sm:justify-start gap-3 sm:gap-4 text-black">
+                  <a
+                    href="mailto:pedrolucaslcosta@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm font-medium rounded hover:bg-neutral-200 hover:text-neutral-900 border border-neutral-900 bg-neutral-900 text-neutral-50 flex items-center px-3"
+                  >
+                    Fale comigo
+                  </a>
+                  <a
+                    href="https://www.instagram.com/pedrolucaslco"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="p-2 rounded bg-neutral-700 hover:bg-neutral-900 text-neutral-50"
+                  >
+                    <AiFillInstagram />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/pedrolucaslcosta"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="bg-neutral-700 hover:bg-neutral-900 text-neutral-50 p-2 rounded"
+                  >
+                    <AiFillLinkedin />
+                  </a>
+                  <a
+                    href="https://www.twitter.com/pedrolucaslco"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="bg-neutral-700 hover:bg-neutral-900 text-neutral-50 p-2 rounded"
+                  >
+                    <AiFillTwitterCircle />
+                  </a>
+                </div>
+              </div>
+              <div className="col-span-5 lg:col-span-2 md:col-span-2 rounded-lg h-64 sm:h-96 relative">     
+                <Image
+                  className="h-full w-full rounded-lg z-10 shadow-2xl object-cover border border-neutral-400 overflow-hidden"
+                  src={profilePic}
+                />
               </div>
             </div>
+          </section>
+        </main>
+        <main
+          className="px-4 sm:px-4 md:px-16 lg:px-24 xl:px-40 2xl:px-40
+        bg-black"
+        >
+          <section className="min-h-screen pb-40">
             <div
-              className="
-            col-span-5 lg:col-span-2 md:col-span-2 rounded-lg  h-64 sm:h-96
-            "
+              id="portfolio"
+              className="flex flex-col items-center text-center justify-center gap-4 pt-24 pb-16 text-3xl text-neutral-50"
             >
-              <Image
-                className="h-full w-full rounded-lg object-scale-down sm:object-scale-down md:object-cover dark:border-neutral-700 border-neutral-300 border"
-                src={model3d}
-              />
+              <span>Portfolio</span>
+              {/* <div className="flex items-center justify-center gap-2 py-2">
+              <div className="text-neutral-50 bg-neutral-900 p-2 text-sm rounded-lg">
+                Dev
+              </div>
+              <div className="text-neutral-50 bg-neutral-900 p-2 text-sm rounded-lg">
+                UI Design
+              </div>
+              <div className="text-neutral-50 bg-neutral-900 p-2 text-sm rounded-lg">
+                Design
+              </div>
+            </div> */}
             </div>
-          </div>
 
-          <div
-            id="portfolio"
-            className="flex items-center text-center justify-center pt-24 pb-16 text-3xl text-neutral-50"
-          >
-            Portfolio
-          </div>
-
-          {/* <div className="p-5 mt-4 dark:border-neutral-700 border-neutral-300 border flex flex-col items-center">
+            {/* <div className="p-5 mt-4 dark:border-neutral-700 border-neutral-300 border flex flex-col items-center">
             <div className="text-base sm:text-xl flex justify-center sm:justify-start gap-3 sm:gap-4 text-black flex-wrap">
               <a title="test" id="tools" className="p-3 rounded-2xl dark:border-neutral-700 border-neutral-300 border text-sky-800 dark:text-sky-100"><FaLaravel /><span>Laravel</span></a>
               <a title="test" id="tools" className="p-3 rounded-2xl dark:border-neutral-700 border-neutral-300 border text-sky-800 dark:text-sky-100"><FaGithubSquare /><span>Git</span></a>
@@ -221,122 +275,48 @@ export default function Home() {
             </div>  
           </div> */}
 
-          <div className=" text-slate-100  grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-2 items-center">
-            <div className="flex flex-col gap-4 overflow-hidden">
-              <Image src={thumbNoisePlayer} className="rounded-lg" />
-              <span className="text-lg">NoisePlayer</span>
-            </div>
-            <div className="flex flex-col gap-4 overflow-hidden">
-              {/* <Image src={thumbNoisePlayer} className="rounded-lg" /> */}
-              <div className="bg-red-700 opacity-25 w-full aspect-[4/3] rounded-lg"></div>
-              <span className="text-lg">Next Project (soon)</span>
-            </div>
-            <div className="flex flex-col gap-4 overflow-hidden">
-              {/* <Image src={thumbNoisePlayer} className="rounded-lg" /> */}
-              <div className="bg-neutral-50 opacity-25 w-full aspect-[4/3] rounded-lg"></div>
-              <span className="text-lg">Next Project (soon)</span>
-            </div>
-          </div>
 
-          {/* <div className="p-10 pb-5 mt-4 rounded-2xl
-          border-neutral-700 border flex flex-col items-center
-          ">
-              <h3 className="text-3xl font-bold dark:text-neutral-300 text-center">Projects</h3>
-              <p className="text-md text-neutral-400 text-center">
-                Check it out
-              </p>
-              <a href="#projetos" className="text-black bg-white flex items-center px-3 py-2 rounded-full font-semibold text-sm">
-                Quero conferir
-                <FiChevronDown />
-              </a>
+          
+
+
+            <div
+              className=" text-slate-100 grid items-center
+            sm:grid-cols-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 
+            gap-4 lg:gap-2"
+            >
               
-            
-          </div> */}
-
-          {/* <div id="projetos" className="grid grid-cols-3 gap-4 my-4">
-
-            <div className="bg-neutral-700 rounded-2xl col-span-1 flex flex-col justify-end
-            hover:bg-neutral-400 hover:transition-all hover:duration-700 hover:opacity-30
-            ">
-              
-                <Image src={design} className="rounded-t-2xl grow"/>
-                <div className="px-4 py-2 flex flex-col overflow-hidden">
-                  <a href="" className="text-neutral-100 text-base">Studio Seven</a>
-                  <a href="" className="text-neutral-400 text-sm font-semibold uppercase">Branding</a>
-                </div>
-              
-
-              
-                 
+              <PortfolioItem
+                image={thumbNoisePlayer}
+                title={"NoisePlayer"}
+                description={
+                  "A simple Brown Noise and Ambient Sounds Player to help focus on tasks."
+                }
+                href={"https://noise-player-pedrolucaslco.vercel.app/"}
+                tags={['React.js', 'TailwindCSS', 'Vite']}
+              />
+              <PortfolioItem
+                image={thumbTodoListApp}
+                title={'To-do List App'}
+                description={
+                  'A simple CRUD to-do list app for react.js practices.'
+                }
+                href={'https://to-do-list-react-js-pedrolucaslcosta.netlify.app/'}
+                tags={['React.js', 'Vite', 'Bootstrap', 'Sass']}
+              />
             </div>
+          </section>
+        </main>
 
-            <div className="bg-neutral-700 rounded-2xl col-span-2">
-              <div className="">
-                <Image src={design} className="rounded-t-2xl"/>
-              </div>
-              <div className="px-4 py-2 flex flex-col">
-                <a href="" className="text-neutral-100 text-base">Studio Seven</a>
-                <a href="" className="text-neutral-400 text-sm font-semibold uppercase">Branding</a>
-              </div>   
-            </div>
-
-            <div className="bg-neutral-700 rounded-2xl col-span-1">
-              <div>
-                <Image src={design} className="rounded-t-2xl bg-cover"/>
-              </div>
-              <div className="px-4 py-2 flex flex-col">
-                <a href="" className="text-neutral-100 text-base">Studio Seven</a>
-                <a href="" className="text-neutral-400 text-sm font-semibold uppercase">Branding</a>
-              </div>   
-            </div>
-          </div>
-
-          <div className="grid grid-cols-3 gap-4 my-4">
-            <div className="bg-neutral-700 rounded-2xl col-span-1">
-              <div>
-                <Image src={design} className="rounded-t-2xl bg-cover"/>
-              </div>
-              <div className="px-4 py-2 flex flex-col">
-                <a href="" className="text-neutral-100 text-base">Studio Seven</a>
-                <a href="" className="text-neutral-400 text-sm font-semibold uppercase">Branding</a>
-              </div>   
-            </div>
-
-            <div className="bg-neutral-700 rounded-2xl col-span-1">
-              <div>
-                <Image src={design} className="rounded-t-2xl bg-cover"/>
-              </div>
-              <div className="px-4 py-2 flex flex-col">
-                <a href="" className="text-neutral-100 text-base">Studio Seven</a>
-                <a href="" className="text-neutral-400 text-sm font-semibold uppercase">Branding</a>
-              </div>   
-            </div>
-
-            <div className="bg-neutral-700 rounded-2xl col-span-1">
-              <div>
-                <Image src={design} className="rounded-t-2xl bg-cover"/>
-              </div>
-              <div className="px-4 py-2 flex flex-col">
-                <a href="" className="text-neutral-100 text-base">Studio Seven</a>
-                <a href="" className="text-neutral-400 text-sm font-semibold uppercase">Branding</a>
-              </div>   
-            </div>
-          </div>
-           */}
-        </section>
-      </main>
-
-      <footer className="
+        <footer
+          className="
       px-4 sm:px-4 md:px-16 lg:px-24 xl:px-40 2xl:px-40
       flex justify-between bg-black border-t-2 border-neutral-900 text-neutral-600 py-8
-      ">
-        <h1 className="uppercase font-bold tracking-[.3rem]">
-          Pedro Lucas
-        </h1>
-        <span>
-        criado por @pedrolucaslco
-        </span>
-      </footer>
+      "
+        >
+          <h1 className="uppercase font-bold tracking-[.3rem]">Pedro Lucas</h1>
+          <span>criado por @pedrolucaslco</span>
+        </footer>
+      </main>
     </div>
   );
 }

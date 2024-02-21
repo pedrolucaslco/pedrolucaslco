@@ -27,7 +27,7 @@ const PortfolioItem = ({ title, description, image, href, tags, category }) => {
           <>
             <span className="bg-black opacity-50 absolute top-0 left-0 w-full h-full"></span>
             <span className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-              <span className="underline">Acessar</span> ↗
+              <span className="underline">Show</span> ↗
             </span>
           </>
         )}

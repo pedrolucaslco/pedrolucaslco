@@ -12,7 +12,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        space_grotesk: 'Space Grotesk',
+        space_grotesk: [
+          "Space Grotesk",
+          {
+            fontFeatureSettings: '"ss02" on, "ss03" on, "ss04" on',
+          },
+        ],
       },
       keyframes: {
         motion_bg: {

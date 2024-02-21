@@ -35,6 +35,7 @@ import {
 } from "lucide-react";
 import NavItem from "./components/NavItem";
 import PortfolioItem from "./components/PortfolioItem";
+import UI_Badge from "./components/UI_Badge";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -78,8 +79,8 @@ export default function Home() {
       <div class="
       items-center gap-5 hidden md:flex
       flex-col mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5">
-        <NavItem text={"Início"} href={"#"} type={"link"} />
-          <NavItem text={"Sobre mim"} href={"#about-me"} type={"link"} />
+        <NavItem text={"Home"} href={"#"} type={"link"} />
+          <NavItem text={"About me"} href={"#about-me"} type={"link"} />
           <NavItem text={"Portfolio"} href={"#portfolio"} type={"link"} />
           <NavItem text={"GitHub"} href={"https://github.com/pedrolucaslcosta"} type={"button"} target={"_blank"}
           />
@@ -89,7 +90,7 @@ export default function Home() {
 </header>
 
         <nav
-          className="backdrop-blur-lg bg-black/80 font-space_grotesk flex justify-between py-6 fixed w-screen z-50
+          className="backdrop-blur-lg bg-neutral-900/80 font-space_grotesk flex justify-between py-6 fixed w-screen z-50
       px-4 sm:px-4 md:px-16 lg:px-24 xl:px-40 2xl:px-40
       "
         >
@@ -97,8 +98,8 @@ export default function Home() {
             Pedro Lucas
           </h1>
           <ul className="items-center gap-4 hidden md:flex">
-            <NavItem text={"Início"} href={"#"} type={"link"} />
-            <NavItem text={"Sobre mim"} href={"#about-me"} type={"link"} />
+            <NavItem text={"Home"} href={"#"} type={"link"} />
+            <NavItem text={"About me"} href={"#about-me"} type={"link"} />
             <NavItem text={"Portfolio"} href={"#portfolio"} type={"link"} />
             {/* <NavItem text={"Experiências"} href={"#experiences"} type={"link"} /> */}
             {/* <NavItem text={"Contato"} href={"#contact"} type={"link"} /> */}
@@ -126,31 +127,24 @@ export default function Home() {
         </nav>
 
         <main
-          className="
-      bg-white dark:bg-black 
+          className="bg-neutral-900 
       px-4 sm:px-4 md:px-16 lg:px-24 xl:px-40 2xl:px-40
       transition-all duration-500
       "
         >
           <section className="h-screen flex flex-col pt-24      ">
-            <div className="text-neutral-50 font-space_grotesk flex flex-col justify-center h-full items-center text-center gap-4">
-              <h1 className="text-5xl ">
-                Desenvolvedor{" "}
-                <span className="underline decoration-sky-800">Frontend</span>
-                <br></br>& UI/UX designer
+            <div className="text-neutral-50 font-bold font-space_grotesk flex flex-col justify-center h-full items-center gap-4">
+              <h1 className="text-7xl">
+                I design and develop applications. 
               </h1>
-              <p>
-                Javascript • React • TailwindCSS • Git • PHP • Laravel •
-                Bootstrap • Figma
-              </p>
-              <a
-                className="bg-neutral-50 text-black py-2 px-6 rounded"
-                href="https://github.com/pedrolucaslcosta"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Github
-              </a>
+              <div className="flex gap-2 mt-16">
+                <span className="bg-neutral-800 border border-neutral-700 items-center gap-1.5 py-1.5 px-3 rounded-full text-sm font-medium">React.js</span>
+                <span className="bg-neutral-800 border border-neutral-700 items-center gap-1.5 py-1.5 px-3 rounded-full text-sm font-medium">TailwindCSS</span>
+                <span className="bg-neutral-800 border border-neutral-700 items-center gap-1.5 py-1.5 px-3 rounded-full text-sm font-medium">Next.js</span>
+                <span className="bg-neutral-800 border border-neutral-700 items-center gap-1.5 py-1.5 px-3 rounded-full text-sm font-medium">Laravel</span>
+                <span className="bg-neutral-800 border border-neutral-700 items-center gap-1.5 py-1.5 px-3 rounded-full text-sm font-medium">Figma</span>
+              </div>
+              
               <a
                 className="mt-8 gap-2   text-neutral-800 animate-bounce hover:text-neutral-50 transition-all duration-300"
                 href="#about-me"
@@ -163,7 +157,7 @@ export default function Home() {
 
         <main
           className="px-4 sm:px-4 md:px-16 lg:px-24 xl:px-40 2xl:px-40
-        bg-neutral-100"
+        bg-neutral-900 text-neutral-100"
         >
           <section id="about-me" className="min-h-screen py-40">
             {/* <div
@@ -180,16 +174,17 @@ export default function Home() {
               lg:p-10 sm:p-8 p-6 
               flex justify-center flex-col gap-4"
               >
-                <h2 className="text-3xl font-space_grotesk sm:text-5xl font-semibold text-neutral-900">
-                  Design e código integrados.
+                <h2 className="text-3xl font-space_grotesk sm:text-5xl font-semibold text-neutral-100">
+                  Integrating design and development.
                   {/* <MousePointer2 className="animate-bounce" size={32} /> */}
                 </h2>
 
-                <p className="text-base sm:text-md text-neutral-600">
+                <p className="text-base sm:text-md text-neutral-500">
                   {/* Com 4 anos de experiência no design, busco.... */}
-                  {
+                  {/* {
                     "Atualmente trabalho como Desenvolvedor Fullstack Junior em Laravel e estou estudando React.js. Busco integrar design e código para proporcionar uma experiência de uso intuitiva e simplificada nos meus projetos."
-                  }
+                  } */}
+                  {"I currently work as a Junior Fullstack Developer with Laravel and studying React.js. I seek to integrate design and code to provide an intuitive and user-friendly experience in my projects."}
                 </p>
 
                 <div className="text-base sm:text-xl flex justify-center sm:justify-start gap-3 sm:gap-4 text-black">
@@ -197,7 +192,7 @@ export default function Home() {
                     href="mailto:pedrolucaslcosta@gmail.com"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-sm font-medium rounded hover:bg-neutral-200 hover:text-neutral-900 border border-neutral-900 bg-neutral-900 text-neutral-50 flex items-center px-3"
+                    className="text-sm font-medium rounded hover:bg-neutral-300 transition-all duration-300 border border-neutral-100 bg-neutral-100 text-neutral-900 flex items-center px-3"
                   >
                     Fale comigo
                   </a>
@@ -205,7 +200,7 @@ export default function Home() {
                     href="https://www.instagram.com/pedrolucaslco"
                     target="_blank"
                     rel="noreferrer"
-                    className="p-2 rounded bg-neutral-700 hover:bg-neutral-900 text-neutral-50"
+                    className="p-2 rounded bg-neutral-800 hover:bg-neutral-700 transition-all duration-500 text-neutral-50"
                   >
                     <AiFillInstagram />
                   </a>
@@ -213,7 +208,7 @@ export default function Home() {
                     href="https://www.linkedin.com/in/pedrolucaslcosta"
                     target="_blank"
                     rel="noreferrer"
-                    className="bg-neutral-700 hover:bg-neutral-900 text-neutral-50 p-2 rounded"
+                    className="bg-neutral-800 hover:bg-neutral-700 transition-all duration-500 text-neutral-50 p-2 rounded"
                   >
                     <AiFillLinkedin />
                   </a>
@@ -221,7 +216,7 @@ export default function Home() {
                     href="https://www.twitter.com/pedrolucaslco"
                     target="_blank"
                     rel="noreferrer"
-                    className="bg-neutral-700 hover:bg-neutral-900 text-neutral-50 p-2 rounded"
+                    className="bg-neutral-800 hover:bg-neutral-700 transition-all duration-500 text-neutral-50 p-2 rounded"
                   >
                     <AiFillTwitterCircle />
                   </a>
@@ -229,7 +224,7 @@ export default function Home() {
               </div>
               <div className="col-span-5 lg:col-span-2 md:col-span-2 rounded-lg h-64 sm:h-96 relative">     
                 <Image
-                  className="h-full w-full rounded-lg z-10 shadow-2xl object-cover border border-neutral-400 overflow-hidden"
+                  className="h-full w-full rounded-lg z-10 grayscale shadow-2xl object-cover border border-neutral-400 overflow-hidden"
                   src={profilePic}
                 />
               </div>
@@ -238,14 +233,16 @@ export default function Home() {
         </main>
         <main
           className="px-4 sm:px-4 md:px-16 lg:px-24 xl:px-40 2xl:px-40
-        bg-black"
+        bg-neutral-900"
         >
           <section className="min-h-screen pb-40">
             <div
               id="portfolio"
-              className="flex flex-col items-center text-center justify-center gap-4 pt-24 pb-16 text-3xl text-neutral-50"
+              className="flex items-center text-center justify-center gap-4 pt-24 pb-16 text-3xl text-neutral-50"
             >
+              <span className="bg-neutral-700 w-full h-0.5"></span>
               <span>Portfolio</span>
+              <span className="bg-neutral-700 w-full h-0.5"></span>
               {/* <div className="flex items-center justify-center gap-2 py-2">
               <div className="text-neutral-50 bg-neutral-900 p-2 text-sm rounded-lg">
                 Dev
@@ -281,12 +278,13 @@ export default function Home() {
 
             <div
               className=" text-slate-100 grid items-center
-            sm:grid-cols-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 
+            sm:grid-cols-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 
             gap-4 lg:gap-2"
             >
               
               <PortfolioItem
                 image={thumbNoisePlayer}
+                category={'Design and Development'}
                 title={"NoisePlayer"}
                 description={
                   "A simple Brown Noise and Ambient Sounds Player to help focus on tasks."
@@ -296,6 +294,7 @@ export default function Home() {
               />
               <PortfolioItem
                 image={thumbTodoListApp}
+                category={'Design and Development'}
                 title={'To-do List App'}
                 description={
                   'A simple CRUD to-do list app for react.js practices.'
@@ -314,7 +313,7 @@ export default function Home() {
       "
         >
           <h1 className="uppercase font-bold tracking-[.3rem]">Pedro Lucas</h1>
-          <span>criado por @pedrolucaslco</span>
+          <span>made by @pedrolucaslco</span>
         </footer>
       </main>
     </div>

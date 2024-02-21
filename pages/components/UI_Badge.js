@@ -10,7 +10,7 @@ const UI_Badge = ({ title, type }) => {
       break;
 
     default:
-        typeClass = 'bg-neutral-900 text-neutral-200';
+        typeClass = 'border border-neutral-800 text-neutral-200';
       break;
   }
 

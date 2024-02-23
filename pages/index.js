@@ -194,7 +194,7 @@ export default function Home() {
                     rel="noreferrer"
                     className="text-sm font-medium rounded hover:bg-neutral-300 transition-all duration-300 border border-neutral-100 bg-neutral-100 text-neutral-900 flex items-center px-3"
                   >
-                    Let's talk
+                    Let&apos;s talk
                   </a>
                   <a
                     href="https://www.instagram.com/pedrolucaslco"

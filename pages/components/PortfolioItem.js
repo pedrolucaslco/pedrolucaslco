@@ -22,7 +22,7 @@ const PortfolioItem = ({ title, description, image, href, tags, category }) => {
       hover:transition-all hover:border-neutral-500"
     >
       <div className="relative transition-all rounded-lg" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <Image src={image} className="rounded-lg"  />
+        <Image src={image} alt='' className="rounded-lg"  />
         {showText && (
           <>
             <span className="bg-black opacity-50 absolute top-0 left-0 w-full h-full"></span>

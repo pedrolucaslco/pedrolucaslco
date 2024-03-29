@@ -3,9 +3,10 @@
 <h2>hi, I’m Pedro 👋</h2>
 
 <p>
-I'm a frontend developer, designer, and business owner. Currently, I work as a 
-full-stack developer at EasySchool, where I develop and maintain solutions to 
-optimize daily routines for schools.
+I'm a frontend developer, designer, and business owner. <br>
+Currently, I work as a full-stack developer at EasySchool, <br>
+where I develop and maintain solutions to optimize daily <br>
+routines for schools.
 </p>
 
 <h4>Connect with me:</h4> 

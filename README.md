@@ -8,7 +8,7 @@ full-stack developer at EasySchool, where I develop and maintain solutions to
 optimize daily routines for schools.
 </p>
 
-<h3>Connect with me:</h3> 
+<h4>Connect with me:</h4> 
 
 <div align="left">
   <a href="https://www.instagram.com/pedrolucaslco/" target="_blank" alt="Instagram">

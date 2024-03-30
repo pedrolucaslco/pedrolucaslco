@@ -34,18 +34,9 @@ const PortfolioItem = ({ title, description, image, href, tags, category }) => {
       </div>
 
       <div className="py-4 flex flex-col">
-        <span className="text-xs text-neutral-500">{category}</span>
-        <span className="text-lg">{title}</span>
-        {/* <span className="text-neutral-400 text-sm mt-4">{description}</span> */}
+        <span className="text-xs text-neutral-800">{category}</span>
+        <span className="text-lg text-neutral-800">{title}</span>
       </div>
-
-      {/* <div className="mt-auto w-full">
-        <div className="flex gap-1 mt-auto">
-          {tags.map((item, index) => (
-            <UI_Badge title={item} />
-          ))}
-        </div>
-      </div> */}
     </a>
   );
 };

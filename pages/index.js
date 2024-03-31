@@ -111,7 +111,7 @@ export default function Home() {
           <section className="h-screen flex flex-col pt-24      ">
           <div className="flex flex-col justify-center h-full items-start gap-8 px-1 lg:px-40">
           <h1 className="text-xl font-bold">hi, I'm Pedro</h1>
-              <h1>I'm a frontend developer, designer, and business owner. Currently, I work as a full-stack developer at EasySchool, where I develop and maintain solutions to optimize daily routines for schools.</h1>
+              <h1>I&apos;m a frontend developer, designer, and business owner. Currently, I work as a full-stack developer at EasySchool, where I develop and maintain solutions to optimize daily routines for schools.</h1>
 			  <div className="text-base sm:text-xl flex justify-start gap-3 sm:gap-4 text-black">
                   <Button asChild>
                     <Link href="mailto:pedrolucaslcosta@gmail.com">

@@ -17,7 +17,7 @@ I'm a frontend developer, designer, and business owner. Currently, I work as a f
     <img src="https://img.shields.io/badge/-Linkedin-000000?style=for-the-badge&logo=Linkedin&logoColor=FFF"/>
   </a>
   
-  <a href="http://www.twitter.com/pedrolucaslco" alt="Twitter">
+  <!-- <a href="http://www.twitter.com/pedrolucaslco" alt="Twitter">
     <img src="https://img.shields.io/badge/-Twitter-000000?style=for-the-badge&logo=Twitter&logoColor=FFF"/>
-  </a>
+  </a> -->
 </div>

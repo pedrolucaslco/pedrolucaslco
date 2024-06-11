@@ -34,7 +34,7 @@ import { BsInstagram, BsTwitterX } from "react-icons/bs";
 
 export default function Home() {
   return (
-    <main className="flex gap-8 min-h-screen flex-col items-center p-24">
+    <main className="flex gap-8 min-h-screen flex-col items-center p-24 mx-auto lg:max-w-[800px]">
       <div className="w-full flex justify-between items-center">
         <h1 className="font-medium">Pedro Lucas</h1>
         <Link className={"pl-1 " + buttonVariants({ variant: "outline" })} href={'mailto:pedrolucaslcosta@gmail.com'}>
@@ -44,7 +44,7 @@ export default function Home() {
       </div>
       <div>
         <h2 className="font-bold text-lg mb-2">Hi, I&apos;m Pedro!</h2>
-        <p>I&apos;m a frontend developer, designer, and business owner. Currently, I work as a full-stack developer at <Link className={"px-0 underline " + buttonVariants({ variant: "link" })} href={'https://site.easyschool.com.br/'}>EasySchool</Link>, where I develop and maintain solutions to optimize daily routines for schools.</p>
+        <p>I&apos;m a frontend developer, designer, and business owner. Currently, I work as a full-stack developer at <Link className={"underline " + buttonVariants({ variant: "link" }) + ' !px-0 '} href={'https://site.easyschool.com.br/'}>EasySchool</Link>, where I develop and maintain solutions to optimize daily routines for schools.</p>
       </div>
       <div className="flex gap-4 w-full">
         <Button size={'icon'} variant={'outline'} asChild>

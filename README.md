@@ -1,4 +1,4 @@
-<img src="https://media.licdn.com/dms/image/v2/D4D16AQHhq5eGQx-5zg/profile-displaybackgroundimage-shrink_350_1400/B4DZaXC9akGsAY-/0/1746290862397?e=1751500800&v=beta&t=41_if9htNjPbgmS4S3u6HGr8WDDEEy40Uxlb_rCDC0U" width="300px" min-width="300px" max-width="300px" align="right" alt="Logo">
+<img src="https://media.licdn.com/dms/image/v2/D4D16AQHhq5eGQx-5zg/profile-displaybackgroundimage-shrink_350_1400/B4DZaXC9akGsAY-/0/1746290862397?e=1751500800&v=beta&t=41_if9htNjPbgmS4S3u6HGr8WDDEEy40Uxlb_rCDC0U" width="100%">
 
 <h2>hi, I’m Pedro 👋</h2>
 

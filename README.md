@@ -1,13 +1,7 @@
-<img src="https://media.licdn.com/dms/image/v2/D4D16AQHhq5eGQx-5zg/profile-displaybackgroundimage-shrink_350_1400/B4DZaXC9akGsAY-/0/1746290862397?e=1751500800&v=beta&t=41_if9htNjPbgmS4S3u6HGr8WDDEEy40Uxlb_rCDC0U" width="100%">
-
 # hi, I’m Pedro 👋
 
 <p>
-💻 I’m a full stack developer at EasySchool, a nationwide company specializing in school management solutions. I work on the development and continuous improvement of systems used by over 450,000 users, primarily using Laravel. My focus is on creating digital experiences that streamline processes and make technology more accessible in the educational environment.
-
-🎨 I have a solid background in graphic design and UX/UI, built over more than 4 years working with visual identities, digital products, and communication strategies — skills I bring into every project to build solutions that are not only intuitive and functional but also visually appealing.
-
-🚀 Throughout my journey, I’ve aimed to bridge technology, design, and strategy to deliver real value for both companies and end users.
+I’m a full stack developer at EasySchool, building and improving systems that impact over 450,000 users in the education sector. I work primarily with Laravel, combining my background in programming, graphic design, and UX/UI to create digital solutions that streamline processes, make technology more accessible, and deliver experiences that are functional, intuitive, and visually engaging.
 </p>
 
 ## Connect with me:

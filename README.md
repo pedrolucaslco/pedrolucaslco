@@ -9,7 +9,7 @@ I have over 5 years of experience in graphic design and UX/UI, working with visu
 **Principal Tech Stack**<br>
 JavaScript | PHP | TypeScript | Python | DaisyUI | Laravel | Next JS | MySQL | Supabase | SQLite | Figma
 
-**Extra Tech Stack**<br>
+**Other tech interests**<br>
 Markdown | HTML5 | Windows Terminal | PowerShell | Bash Script | AWS | Firebase | Vercel | Angular.js | Bootstrap | Ionic | Insomnia | jQuery | JWT | NodeJS | NPM | WordPress | Vue.js | Vite | Apache | Firebase | Postgres | Prisma | Adobe | Adobe Illustrator | Adobe InDesign | Dribbble | Canva | Adobe Lightroom | Adobe Photoshop | Git | GitHub | Prettier | Power Bi | Notion
 
 <!---
